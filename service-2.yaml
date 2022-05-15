@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: service-2
+  description: service-2
+  annotations:
+    backstage.io/kubernetes-id: service-2
+    backstage.io/kubernetes-label-selector: "app=service-2"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: rannox
