@@ -4,9 +4,9 @@ metadata:
   name: postgres
   description: postgres
   annotations:
-    "backstage.io/kubernetes-id": "postgres"
-spec:
-  kubernetes:
-    selector:
-      matchLabels:
-        app: postgres
+    'backstage.io/kubernetes-label-selector': "app=postgres"
+#spec:
+#  kubernetes:
+#    selector:
+#      matchLabels:
+#        app: postgres
