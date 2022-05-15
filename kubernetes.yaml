@@ -9,6 +9,7 @@ metadata:
     backstage.io/kubernetes-label-selector: "app=postgres"
 spec:
   type: service
+  lifecycle: experimental
 #spec:
 #  kubernetes:
 #    selector:
