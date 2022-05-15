@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: card-station-db
+  description: Stores the card details
+spec:
+  type: database
+  owner: team-a
+  system: card-station-portal
