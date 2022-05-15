@@ -10,4 +10,4 @@ spec:
   type: service
   lifecycle: experimental
   owner: rannox
-  domain: Payment
+  system: card-station-portal
