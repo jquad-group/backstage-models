@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: postgres
+  description: postgres
+  annotations:
+    "backstage.io/kubernetes-id": "postgres"
+spec:
+  kubernetes:
+    selector:
+      matchLabels:
+        app: postgres
