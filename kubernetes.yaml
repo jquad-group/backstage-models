@@ -1,11 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  labels:
-    backstage.io/kubernetes-id: postgres
+#  labels:
+#    backstage.io/kubernetes-id: postgres
+#    backstage.io/kubernetes-label-selector: "app=postgres"
   name: postgres
   description: postgres
   annotations:
+    backstage.io/kubernetes-id: postgres
     backstage.io/kubernetes-label-selector: "app=postgres"
 spec:
   type: service
