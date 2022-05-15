@@ -26,6 +26,28 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
+  name: buldzr
+spec:
+  profile:
+    # Intentional no displayName for testing
+    email: ly@jquad.de
+    picture: https://avatars.dicebear.com/api/avataaars/breanna-davison@example.com.svg?background=%23fff
+  memberOf: [team-a]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: n-kostadinov
+spec:
+  profile:
+    # Intentional no displayName for testing
+    email: nk@jquad.de
+    picture: https://avatars.dicebear.com/api/avataaars/breanna-davison@example.com.svg?background=%23fff
+  memberOf: [team-a]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
   name: breanna.davison
 spec:
   profile:
