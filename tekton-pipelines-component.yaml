@@ -2,8 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   namespace: default
-  annotations:
-    tektonci/build-namespace: sample-go-application-build
+  #annotations:
+    #tektonci/build-namespace: sample-go-application-build
   name: jquad-microservice
   description: JQuad Microservice
 spec:
