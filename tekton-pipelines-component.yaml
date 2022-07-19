@@ -1,8 +1,35 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: tekton-pipelines-plugin-component
+  namespace: default
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/backstage/backstage/tree/master/packages/catalog-model/examples/components/shuffle-api-component.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
+    backstage.io/view-url: https://github.com/backstage/backstage/tree/master/packages/catalog-model/examples/components/shuffle-api-component.yaml
+    backstage.io/edit-url: https://github.com/backstage/backstage/edit/master/packages/catalog-model/examples/components/shuffle-api-component.yaml
+    backstage.io/source-location: url:https://github.com/backstage/backstage/tree/master/packages/catalog-model/examples/components/
+    tektonci/build-namespace: sample-go-application-build
+  name: jquad-microservice
+  description: JQuad Microservice
+  tags:
+    - go
+  uid: 9b219faa-43cb-4aa6-910a-d4f77bc68d47
+  etag: 284f25c98f2057cd4cda03673c5c7101fc5fe903
+relations:
+  - type: ownedBy
+    targetRef: user:default/guest
+    target:
+      kind: user
+      namespace: default
+      name: guest
+  - type: partOf
+    targetRef: system:default/audio-playback
+    target:
+      kind: system
+      namespace: default
+      name: audio-playback
 spec:
-  lifecycle: production
-  owner: my-team
   type: service
+  lifecycle: production
+  owner: user:guest
+  system: audio-playback
