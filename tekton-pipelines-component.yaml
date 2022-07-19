@@ -3,7 +3,7 @@ kind: Component
 metadata:
   namespace: default
   annotations:
-    tektonci/build-namespace: sample-go-application-build
+    tektonci/build-namespace: sample-go-application-build-empty
   name: jquad-microservice
   description: JQuad Microservice
 spec:
