@@ -4,7 +4,7 @@ metadata:
   namespace: default
   annotations:
     tektonci/build-namespace: sample-go-application-build
-    tektonci/pipeline-label-selector: 'pipeline.jquad.rocks/git.repository.branch.name=test-pr-9'
+    tektonci/pipeline-label-selector: 'pipeline.jquad.rocks/pr.branch.name=test-pr-9'
   name: jquad-microservice
   description: JQuad Microservice
 spec:
