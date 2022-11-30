@@ -3,7 +3,7 @@ kind: Component
 metadata:
   namespace: default
   annotations:
-    tektonci/build-namespace: pullrequest-operator-system-build
+    tektonci/build-namespace: pipeline-trigger-operator-system-build
   name: jquad-microservice
   description: JQuad Microservice
 spec:
