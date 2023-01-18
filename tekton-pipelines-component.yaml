@@ -7,6 +7,6 @@ metadata:
   name: jquad-microservice
   description: JQuad Microservice
 spec:
-  type: service
+  type: image
   lifecycle: production
   owner: user:guest
