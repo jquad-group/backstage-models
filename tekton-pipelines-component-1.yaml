@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  namespace: default
+  annotations:
+    tektonci/build-namespace: pipeline-trigger-operator-system-build
+  name: jquad-image
+  description: JQuad Image
+spec:
+  type: image
+  lifecycle: production
+  owner: user:guest
