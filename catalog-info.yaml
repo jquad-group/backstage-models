@@ -3,21 +3,16 @@ kind: Component
 metadata:
   namespace: pipeline-demo
   annotations:
-    backstage.io/managed-by-location: url:https://github.com/backstage/backstage/tree/master/packages/catalog-model/examples/components/shuffle-api-component.yaml
-    backstage.io/managed-by-origin-location: url:https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
-    backstage.io/view-url: https://github.com/backstage/backstage/tree/master/packages/catalog-model/examples/components/shuffle-api-component.yaml
-    backstage.io/edit-url: https://github.com/backstage/backstage/edit/master/packages/catalog-model/examples/components/shuffle-api-component.yaml
-    backstage.io/source-location: url:https://github.com/backstage/backstage/tree/master/packages/catalog-model/examples/components/
     backstage.io/kubernetes-id: jquad-id  
   name: jquad-api
-  description: JQuad API
+  description: JQuad API    
   labels:
-    goVersion: go1.15.3
+    goVersion: blabla
     category: music
   tags:
     - go
-  uid: cdb35257-0216-4336-9974-b1e5182ed08b
-  etag: fbc9fcedb45a45856c4ce65f094080ab241135f6
+  uid: cdb35257-0216-4336-9974-b1e5182e108b
+  etag: fbc9fcedb45a45856c4ce65f094080ab241135f7
 relations:
   - type: ownedBy
     targetRef: user:default/guest
@@ -36,4 +31,3 @@ spec:
   lifecycle: production
   owner: user:guest
   system: audio-playback
-
