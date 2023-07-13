@@ -11,21 +11,6 @@ metadata:
     category: music
   tags:
     - go
-  uid: cdb35257-0216-4336-9974-b1e5182e108b
-  etag: fbc9fcedb45a45856c4ce65f094080ab241135f7
-relations:
-  - type: ownedBy
-    targetRef: user:default/guest
-    target:
-      kind: user
-      namespace: default
-      name: guest
-  - type: partOf
-    targetRef: system:default/audio-playback
-    target:
-      kind: system
-      namespace: default
-      name: audio-playback
 spec:
   type: service
   lifecycle: production
