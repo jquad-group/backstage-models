@@ -4,6 +4,7 @@ metadata:
   namespace: pipeline-demo
   annotations:
     backstage.io/kubernetes-id: jquad-id
+    tektonci/pipeline-label-selector: 'pipeline.jquad.rocks/git.repository.branch.name=main'
   name: jquad-api
   description: JQuad API    
   labels:
