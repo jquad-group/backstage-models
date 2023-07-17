@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  namespace: pipeline-demo
+  annotations:
+    backstage.io/kubernetes-id: jquad-id
+  name: jquad-api
+  description: JQuad API    
+  labels:
+    goVersion: blabla
+    category: music
+  tags:
+    - go
+spec:
+  type: service
+  lifecycle: production
+  owner: user:guest
