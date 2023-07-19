@@ -4,7 +4,7 @@ metadata:
   namespace: pipeline-demo
   annotations:
     backstage.io/kubernetes-id: jquad-id
-    tektonci/build-namespace: pipeline-demo
+    tektonci: "true"
   name: jquad-api
   description: JQuad API    
   labels:
