@@ -7,7 +7,7 @@ metadata:
     #tektonci/build-namespace: pipeline-demo
     #tektonci/pipeline-label-selector: 'pipeline.jquad.rocks/git.repository.branch.name=main,pipeline.jquad.rocks/git.commid.id=3124134kjndf'
     backstage.io/kubernetes-label-selector: 'app=microservice'
-    tektonci: "true"
+    tektonci/enabled: "true"
   name: jquad-api
   description: JQuad API    
   labels:
