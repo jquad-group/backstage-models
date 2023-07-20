@@ -3,9 +3,10 @@ kind: Component
 metadata:
   namespace: pipeline-demo
   annotations:
-    backstage.io/kubernetes-id: jquad-id
-    tektonci/build-namespace: pipeline-demo
-    tektonci/pipeline-label-selector: 'pipeline.jquad.rocks/git.repository.branch.name=main,pipeline.jquad.rocks/git.commid.id=3124134kjndf'
+    #backstage.io/kubernetes-id: jquad-id
+    #tektonci/build-namespace: pipeline-demo
+    #tektonci/pipeline-label-selector: 'pipeline.jquad.rocks/git.repository.branch.name=main,pipeline.jquad.rocks/git.commid.id=3124134kjndf'
+    backstage.io/kubernetes-label-selector: 'app=microservice'
   name: jquad-api
   description: JQuad API    
   labels:
