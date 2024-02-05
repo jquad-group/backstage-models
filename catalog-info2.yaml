@@ -9,7 +9,7 @@ metadata:
     backstage.io/kubernetes-label-selector: 'app=microservice'
     tektonci/enabled: "true"
     tektonci.k3d/dashboard: http://localhost:8080/#/namespaces/$namespace/pipelineruns/$pipelinerun
-    tektonci.rancher/dashboard: https://rancher.jquad.rocks/k8s/clusters/local/api/v1/namespaces/tekton-pipelines/services/http:tekton-dashboard:9097/proxy/#/namespaces/$namespace/pipelineruns/$pipelinerun
+    tektonci.rancher-hetzner/dashboard: https://rancher.jquad.rocks/k8s/clusters/local/api/v1/namespaces/tekton-pipelines/services/http:tekton-dashboard:9097/proxy/#/namespaces/$namespace/pipelineruns/$pipelinerun
   name: jquad-api
   description: JQuad API    
   labels:
